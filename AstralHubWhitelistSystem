@@ -1,7 +1,4 @@
---// Whitelist system
-local Players = game:GetService("Players")
-local plr = Players.LocalPlayer
-
+-- AstralHubWhitelistSystem.lua
 local whitelist = {
     ["llamacanspit1"] = true,
     ["iyad3049"] = true,
@@ -9,8 +6,8 @@ local whitelist = {
     ["redchiro1"] = true,
     ["Mrfijilove"] = true,
     ["Chanhung1111"] = true,
-    ["wwwzzz_30www"] = true,
-    ["TinMotter76MA"] = true,
+    ["wwwzz30www"] = true,
+    ["TimMotter76MA"] = true,
     ["kartofan4k09"] = true,
     ["cobra_dz1"] = true,
     ["Ektoras06gr"] = true,
@@ -25,15 +22,10 @@ local whitelist = {
     ["ITSMEHARSH132"] = true,
     ["balbonbacon"] = true,
     ["speedban6667"] = true,
-    ["renzjairo12"] = true,
+    ["renzijaro12"] = true,
     ["viratgamer05"] = true,
     ["Hyasp4"] = true,
     ["Gill_k786"] = true
 }
 
-if not whitelist[plr.Name] then
-    plr:Kick("You are not whitelisted to use this script pls contact owner at discord to buy script and get whitelist.")
-    return
-end
-
-print(plr.Name .. " is whitelisted. Waiting for key...")
+return whitelist
